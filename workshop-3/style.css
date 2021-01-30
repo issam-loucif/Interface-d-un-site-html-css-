@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+ html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px ;d
+ }
+
+*{ 
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+section{
+    min-height: 615px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 100px 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    border-radius:8px;
+    box-shadow: 0px 0px 14px 1px #00000024;
+    overflow: hidden;
+}
+
+.parti{
+    padding: 30px;
+}
+ 
+.par1{
+    background-color: white;
+}
+
+.par1 h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.par1 h2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.par1 p{
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.par2{
+    background-color: hsl(179, 62%, 43%);
+}
+
+.par2 h2{
+    color:white;
+    font-weight: 700;
+    font-size:20px;
+    margin-bottom: 15px;
+}
+
+.par2 p{
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.par2 p span{
+    font-size:40px;
+    font-weight: 700;
+}
+
+.par2 button{
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    background-color:  hsl(71, 73%, 54%);
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: 0px 0px 0px 2px #5f5f5f33;
+    border-radius:8px;
+}
+.par3{
+    background-color: #4abebd;
+}
+.par3 h2{
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+.par3 p{
+    color: hsl(204, 43%, 93%);
+    line-height: 24px; 
+}
+@media only screen and (min-width:1100px){
+    .container{
+        grid-template-columns: 50% 50%;
+    }
+    .par1{
+        grid-area: 1/ 1/ 2/ 3;
+    }
+    .par2,.par3{
+        grid-row: 2;
+    }
+}
+
